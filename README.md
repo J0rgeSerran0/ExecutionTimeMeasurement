@@ -7,7 +7,7 @@
 
 ## Introduction
 
-* You can use this Framework in your .NET Framework apps with 4.6.1 or greater, or .NET Core 2.0 or greater.
+* You can use this Framework in your .NET Framework apps with 4.6.1 or greater, or .NET Core 2.0 or greater and Visual Studio 2017.
 
 
 ## Installing the package
