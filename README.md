@@ -56,8 +56,14 @@ public void ExecutionWithoutParams()
 To execute the measurement, we will have to execute the next code:
 
 ```csharp
-Process process = new Process();
-MeasureResult measureResult = Measurement.Exec(process.ExecutionWithoutParams);
+MeasureResult measureResult = Measurement.Exec(ExecutionWithoutParams);
+Console.WriteLine(measureResult.Name);
+Console.WriteLine(measureResult.Description);
+Console.WriteLine(measureResult.Iterations);
+foreach (var item in measureResult.ResultTime)
+{
+    Console.WriteLine(item.Elapsed.TotalMilliseconds);
+}
 ```
 
 In the `MeasureResult` object, we will receive the summary of the results with the time of each execution.
