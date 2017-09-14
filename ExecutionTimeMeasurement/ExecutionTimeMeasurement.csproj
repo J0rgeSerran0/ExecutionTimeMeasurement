@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Jorge Serrano Perez</Authors>
+    <Description>Framework for .NET Framework 4.6.1 or greater, and .NET Core 2.0 or greater, to generate measurements about the times consumed by a method.
+You can execute a method more than 1 time at the same time to measure all times consumed by each execution, getting the average time consumed in total.</Description>
+    <PackageLicenseUrl>https://github.com/J0rgeSerran0/ExecutionTimeMeasurement/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/J0rgeSerran0/ExecutionTimeMeasurement</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/J0rgeSerran0/ExecutionTimeMeasurement</RepositoryUrl>
+    <PackageIconUrl>https://github.com/J0rgeSerran0/ExecutionTimeMeasurement/blob/master/ExecutionTimeMeasurement.png?raw=true</PackageIconUrl>
+    <Copyright>2017</Copyright>
+    <Company>Jorge Serrano Perez</Company>
+    <PackageTags>.net core framework measure measurement time execution performance</PackageTags>
+    <PackageReleaseNotes>v1.0 - First release of the Framework</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard2.0\ExecutionTimeMeasurement.xml</DocumentationFile>
+  </PropertyGroup>
+
+</Project>
